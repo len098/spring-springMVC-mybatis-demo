@@ -10,8 +10,7 @@
 
 ### 项目文件基本结构
 
-![1552916877075](C:\Users\Len\AppData\Roaming\Typora\typora-user-images\1552916877075.png)
-
+![](https://github.com/len098/spring-springMVC-mybatis-/blob/master/1552916877075.png?raw=true)
 - controller-控制层
 - dao-持久层
 - service-业务层
@@ -500,7 +499,7 @@ public class App {
 
 运行，出现下图则表示整合成功
 
-![1552917602944](C:\Users\Len\AppData\Roaming\Typora\typora-user-images\1552917602944.png)
+![1552917602944](https://github.com/len098/spring-springMVC-mybatis-/blob/master/1552917602944.png?raw=true)
 
 
 
@@ -530,6 +529,6 @@ public class TestController {
 
 配置好Tomcat，在浏览器输入` http://localhost:8080/ssm_war_exploded/test/hello`出现下图，
 
-![1552922867982](C:\Users\Len\AppData\Roaming\Typora\typora-user-images\1552922867982.png)
+![1552922867982](https://github.com/len098/spring-springMVC-mybatis-/blob/master/1552922867982.png?raw=true)
 
 则恭喜你，到现在ssm三件套已经整合完毕，在这个基础上可以进行进一步的开发了
