@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    <!--Mybatis动态代理进行映射dao接口-->
+<mapper namespace="ssm.dao.TestDao">
+    <!--
+        返回结果映射
+        如果开启驼峰命名转换且命名规范该段代码可以不写
+        因为配置别名 所以type属性使用的是mybatis-conf中的别名
+        -->
+    <resultMap type="TestEntity" id="TestResult">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+    </resultMap>
+    <!--  定义字段集合 -->
+    <sql id="TestColumns">
+        id,name,age
+    </sql>
+    <!-- 接口中getData 具体实现-->
+    <select id="getData" resultMap="TestResult">
+        select <include refid="TestColumns"/>  from test where id = 1
+    </select>
+</mapper>
